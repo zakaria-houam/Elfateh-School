@@ -165,12 +165,13 @@ html{
 .delete-overflow{
     overflow: hidden;
 }
-.contact-infos{
+.contact-infos {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .contact-inf{
     height: 3rem;
     width: 20rem;
@@ -194,14 +195,74 @@ html{
 }
 .contactus-page .close i{
     position: relative;
+    top: 7%;
+    left: -90%;
+    font-size: 5rem;
+    color: var(--second);
+    cursor: pointer;
+}
+.sanadat-page .close i{
+    position: relative;
     top: 5%;
     left: -90%;
     font-size: 5rem;
     color: var(--second);
     cursor: pointer;
 }
-.contact-us-btn{
+
+.service h2{
     cursor: pointer;
+}
+.sanadat-page{
+    background: white;
+    position: fixed;
+    top: -500%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    
+}
+.show-sanadat-page{
+    top: 0;
+}
+.sanadat-inf h2{
+    background: var(--second);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.sanadat-infos{
+    display: flex;
+    position: relative;
+    top: -10%;
+    flex-direction: column;
+    align-items: center;
+}
+.sanadat-infos h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+.documents h1{
+    font-size: 2rem;
+    background: var(--third);
+    border-radius: 10px;
+    color: white;
+    padding-right: 1rem;
+}
+.documents{
+    position: relative;
+    display: none;
+    transition: .5s ease-in-out;
+}
+.show-document{
+    display: block;
 }
 @media only screen and (max-width: 600px){
     .home-down{
@@ -246,7 +307,7 @@ html{
         margin-right: 4rem;
     }
     .contactus-page{
-        box-shadow: 1px 1px 10px 1px var(--first);
+        
         transition: 1s ease-in-out;
        position: fixed;
        height: 100rem;
@@ -255,7 +316,10 @@ html{
         top: 00%;
         
     }
-    .contactus-page .close i{
+    .contactus-page .close i, .sanadat-page .close i{
         left: -80%;
+    }
+    .sanadat-inf h2{
+        padding: 0 1rem;
     }
 }

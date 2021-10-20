@@ -11,7 +11,7 @@ for (var i = 0 ; i< items.length ; i++){
 }
 var contactus = document.querySelector(".contact-us-btn");
 var contactpage = document.querySelector(".contactus-page");
-var closecontact = document.querySelector(".close .bx-x");
+var closecontact = document.querySelector(".contactus-page .close .bx-x");
 contactus.addEventListener('click',function(){
     contactpage.classList.add('show-contact-page')
     document.querySelector('body').classList.add('delete-overflow')
@@ -19,4 +19,42 @@ contactus.addEventListener('click',function(){
 closecontact.addEventListener('click',function(){
     contactpage.classList.remove('show-contact-page')
     document.querySelector('body').classList.remove('delete-overflow')
+})
+var sanadatbtn = document.querySelectorAll(".sanadat-btn")
+var sanadatpage = document.querySelector(".sanadat-page")
+var closesanadat = document.querySelector(".sanadat-page i")
+var sanadat = document.querySelectorAll(".sanadat ul li a")
+for ( var i = 0 ; i<sanadatbtn.length ; i++){
+    sanadatbtn[i].addEventListener('click',function(){
+        sanadatpage.classList.add('show-sanadat-page');
+        document.querySelector('body').classList.add('delete-overflow')
+    })
+}
+for (var i=0 ; i<sanadat.length; i++){
+    sanadat[i].addEventListener('click',function(){
+        sanadatpage.classList.add('show-sanadat-page');
+        document.querySelector('body').classList.add('delete-overflow')
+    })
+}
+closesanadat.addEventListener('click', function(){
+    sanadatpage.classList.remove('show-sanadat-page');
+    document.querySelector('body').classList.remove('delete-overflow')
+})
+
+var firstShow = document.querySelector(".first")
+var secondShow = document.querySelector(".second")
+var thirdShow = document.querySelector(".third")
+var fourthShow = document.querySelector(".fourth")
+
+firstShow.addEventListener('click',function(){
+    document.querySelector(".first-year").classList.toggle("show-document")
+})
+secondShow.addEventListener('click',function(){
+    document.querySelector(".second-year").classList.toggle("show-document")
+})
+thirdShow.addEventListener('click',function(){
+    document.querySelector(".third-year").classList.toggle("show-document")
+})
+fourthShow.addEventListener('click',function(){
+    document.querySelector(".fourth-year").classList.toggle("show-document")
 })
