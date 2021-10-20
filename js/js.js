@@ -48,13 +48,25 @@ var fourthShow = document.querySelector(".fourth")
 
 firstShow.addEventListener('click',function(){
     document.querySelector(".first-year").classList.toggle("show-document")
+    document.querySelector(".second-year").classList.remove("show-document")
+    document.querySelector(".third-year").classList.remove("show-document")
+    document.querySelector(".fourth-year").classList.remove("show-document")
 })
 secondShow.addEventListener('click',function(){
     document.querySelector(".second-year").classList.toggle("show-document")
+    document.querySelector(".third-year").classList.remove("show-document")
+    document.querySelector(".fourth-year").classList.remove("show-document")
+    document.querySelector(".first-year").classList.remove("show-document")
 })
 thirdShow.addEventListener('click',function(){
     document.querySelector(".third-year").classList.toggle("show-document")
+    document.querySelector(".fourth-year").classList.remove("show-document")
+    document.querySelector(".first-year").classList.remove("show-document")
+    document.querySelector(".second-year").classList.remove("show-document")
 })
 fourthShow.addEventListener('click',function(){
     document.querySelector(".fourth-year").classList.toggle("show-document")
+    document.querySelector(".first-year").classList.remove("show-document")
+    document.querySelector(".second-year").classList.remove("show-document")
+    document.querySelector(".third-year").classList.remove("show-document")
 })
