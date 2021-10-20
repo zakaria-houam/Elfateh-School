@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+:root{
+    --first : #00a99d;
+    
+    --second : #0C9CEE;
+    --third: #591FCE;
+    --fourth : white;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--first);
+    box-shadow: 1px 1px 10px 1px var(--second);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.logo a{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.nav-bar a{
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: .2rem;
+}
+.nav-bar a:hover{
+    border-bottom: 2px solid var(--third);
+}
+.home-up{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 2rem;
+}
+.home-up h2{
+    color: var(--second);
+    font-size: 2rem;
+}
+.home-up img{
+    width: 400px;
+}
+.home-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.service{
+    border: 2px solid var(--second);
+    border-radius: 100%;
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.service img{
+    width: 100px;
+}
+.service h2{
+    color: var(--first);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.service h4{
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: .5%;
+    top: 20%;
+    gap: 1rem;
+}
+.links img{
+    width: 30px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--second);
+}
+footer img{
+    width: 200px;
+    margin-top: 1rem;
+}
+footer h1{
+    font-size: 2rem;
+    color: var(--first);
+}
+footer a, footer li{
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: black;
+}
+footer a:hover{
+    border-bottom: 1px solid var(--third);
+}
+.footer-links img{
+    width: 50px;
+    margin-left: 1rem;
+}
+.menu{
+    display: none;
+}
+.copy-right img{
+    width: 20px;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contactus-page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    transition: .5s ease-in-out;
+    top: -500%;
+    
+}
+.show-contact-page{
+    top: 0;
+    
+}
+.delete-overflow{
+    overflow: hidden;
+}
+.contact-infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-inf{
+    height: 3rem;
+    width: 20rem;
+    background: var(--second);
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.contact-inf img{
+    width: 20px;
+    margin-right: 1rem;
+}
+.contact-inf h2{
+    color: white;
+}
+.contact-infos h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contactus-page .close i{
+    position: relative;
+    top: 5%;
+    left: -90%;
+    font-size: 5rem;
+    color: var(--second);
+    cursor: pointer;
+}
+.contact-us-btn{
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    .home-down{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        position: absolute;
+        top: 380%;
+        left: -128%;
+        transform: translate(-50%,-50%);
+        background: var(--first);
+        width: 35vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding-bottom: 2rem;
+        transition: .5s ease-in-out;
+    }
+    .nav-bar .show-menu{
+        left: 28%;
+    }
+    .nav-bar a{
+        color: white;
+    }
+    .menu{
+        display: block;
+        margin-top: 1rem;
+    }
+    .menu i{
+        font-size: 2.5rem;
+        color: white;
+    }
+    .home-up h2{
+        padding: 0 1rem;
+    }
+    footer .title{
+        margin-right: 4rem;
+    }
+    .contactus-page{
+        box-shadow: 1px 1px 10px 1px var(--first);
+        transition: 1s ease-in-out;
+       position: fixed;
+       height: 100rem;
+    }
+    .show-contact-page{
+        top: 00%;
+        
+    }
+    .contactus-page .close i{
+        left: -80%;
+    }
+}
