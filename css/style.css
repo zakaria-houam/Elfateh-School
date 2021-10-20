@@ -226,17 +226,7 @@ html{
 .show-sanadat-page{
     top: 0;
 }
-.sanadat-inf h2{
-    background: var(--second);
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25rem;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-}
+
 .sanadat-infos{
     display: flex;
     position: relative;
@@ -246,15 +236,18 @@ html{
 }
 .sanadat-infos h1{
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: bolder;
 }
 .documents h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: var(--third);
     border-radius: 10px;
     color: white;
     padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .documents{
     position: relative;
@@ -263,6 +256,24 @@ html{
 }
 .show-document{
     display: block;
+}
+.dirasa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+.dirasa h2{
+    background: var(--second);
+    padding: 0 1rem;
+    color: white;
+    cursor: pointer;
+}
+.dirasa img{
+    width: 40px;
+    background: var(--second);
+    padding: .2rem .5rem;
 }
 @media only screen and (max-width: 600px){
     .home-down{
@@ -321,5 +332,14 @@ html{
     }
     .sanadat-inf h2{
         padding: 0 1rem;
+    }
+    .dirasa h2{
+        font-size: 1rem;
+    }
+    .documents h1{
+        font-size: 1rem;
+    }
+    .dirasa img{
+        padding: .2rem;
     }
 }
