@@ -241,7 +241,7 @@ html{
     margin-bottom: 1rem;
     font-weight: bolder;
 }
-.documents h1{
+.documents a{
     font-size: 1.5rem;
     background: var(--third);
     border-radius: 10px;
