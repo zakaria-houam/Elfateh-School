@@ -112,7 +112,9 @@ footer{
     display: flex;
     justify-content: space-around;
     border-top: 1px solid var(--second);
+    
 }
+
 footer img{
     width: 200px;
     margin-top: 1rem;
@@ -248,6 +250,10 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.documents a{
+    color: white;
 }
 .documents{
     position: relative;
@@ -281,6 +287,31 @@ html{
     color: white;
     padding: .5rem;
 }
+.les-pdfs{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pdf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pdf a{
+    background: var(--second);
+    width: 25rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+}
 @media only screen and (max-width: 600px){
     .home-down{
         flex-direction: column;
@@ -302,6 +333,9 @@ html{
         border-radius: 10px;
         padding-bottom: 2rem;
         transition: .5s ease-in-out;
+    }
+    .pdf-nav ul{
+        top: 213%;
     }
     .nav-bar .show-menu{
         left: 28%;
@@ -347,5 +381,8 @@ html{
     }
     .dirasa i{
         padding: .2rem;
+    }
+    .pdf a{
+        width: 15rem;
     }
 }
