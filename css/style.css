@@ -451,4 +451,7 @@ html{
         flex-direction: column;
         gap: 2rem;
     }
+    .copy-right h2{
+        font-size: .8rem;
+    }
 }
