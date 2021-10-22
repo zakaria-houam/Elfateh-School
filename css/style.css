@@ -348,11 +348,12 @@ html{
     
 }
 .les-pdfs{
-    margin-top: 5rem;
+    margin-bottom: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
 }
 .pdf{
     display: flex;
@@ -363,7 +364,7 @@ html{
     background: var(--fifth);
     width: 25rem;
     height: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
