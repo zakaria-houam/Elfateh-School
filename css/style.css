@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     direction: rtl;
 }
 :root{
@@ -148,7 +148,8 @@ footer{
     display: flex;
     justify-content: space-around;
     border-top: 1px solid var(--fifth);
-    
+    background: #1597E5;
+    background: var(--first);
 }
 
 footer img{
@@ -156,12 +157,12 @@ footer img{
     margin-top: 1rem;
 }
 footer h1{
-    font-size: 2rem;
-    color: var(--fifth);
+    font-size: 2.5rem;
+    color: var(--third);
 }
 footer a, footer li{
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
 }
 footer a:hover{
@@ -181,8 +182,13 @@ footer a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: .2rem;
     gap: .5rem;
+    background: #206A5D;
+    padding: .5rem 1rem;
+}
+.copy-right h2{
+    color: white;
 }
 html{
     scroll-behavior: smooth;
@@ -278,11 +284,11 @@ html{
     font-weight: bolder;
 }
 .documents a{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     background: var(--second);
-    border-radius: 10px;
+   padding: .4rem 3rem;
     color: white;
-    padding-right: 1rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,7 +303,7 @@ html{
 .show-document{
     display: block;
 }
-.dirasa{
+.dirasa, .mod{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,13 +315,18 @@ html{
     padding: 0 1rem;
     color: var(--fourth);
     cursor: pointer;
+    font-size: 2rem;
+    padding: .2rem 2rem;
 }
 
-.dirasa i{
+.dirasa i, .mod i{
     font-size: 1.5rem;
     background: var(--fifth);
     color: var(--fourth);
     padding: .5rem;
+}
+.mod i {
+    background: var(--second);
 }
 .les-pdfs{
     margin-top: 5rem;
@@ -340,9 +351,25 @@ html{
     align-items: center;
     color: var(--fourth);
     font-size: 1rem;
-    border-radius: 20px;
+    
 }
-
+.under-scroll{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--second);
+    color: white;
+    padding: 2rem;
+}
+.under-scroll a{
+    color: var(--second);
+    font-size: 2rem;
+    background: white;
+    padding: .5rem 1rem;
+    margin-top: .5rem;
+    border-radius: 10px;
+    font-weight: bolder;
+}
 @media only screen and (max-width: 600px){
     .home-down{
         flex-direction: column;
@@ -405,10 +432,10 @@ html{
         padding: 0 1rem;
     }
     .dirasa h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-    .documents h1{
-        font-size: 1rem;
+    .documents a{
+        font-size: 1.5rem;
     }
     .dirasa i{
         padding: .2rem;
@@ -419,5 +446,9 @@ html{
     .scroll{
         background-position: center;
         background-size: cover;
+    }
+    .under-scroll{
+        flex-direction: column;
+        gap: 2rem;
     }
 }
