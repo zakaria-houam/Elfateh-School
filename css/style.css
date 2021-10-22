@@ -311,8 +311,7 @@ html{
 }
 .dirasa, .mod{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     gap: .2rem;
     margin-bottom: 1rem;
 }
@@ -332,14 +331,21 @@ html{
     padding: .5rem;
     text-align: center;
 }
-
+.mod{
+    margin-bottom: .4rem;
+}
 .mod a {
     width: 20rem;
 }
 .mod i {
     background: var(--second);
     font-size: 2.5rem;
-    padding: 1rem 1rem;
+    padding-bottom: 0;
+    height: 3.8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
 }
 .les-pdfs{
     margin-top: 5rem;
@@ -474,5 +480,7 @@ html{
     .mod i{
         padding: .2rem;
         font-size: 1.5rem;
+        height: 2.5rem;
+       
     }
 }
