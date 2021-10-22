@@ -38,7 +38,7 @@ header{
 .nav-bar ul{
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 4rem;
 }
 .logo a{
     color: var(--fourth);
