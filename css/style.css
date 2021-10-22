@@ -232,6 +232,7 @@ html{
 }
 .contact-inf h2{
     color: var(--fourth);
+    font-size: 1rem;
 }
 .contact-infos h1{
     text-align: center;
