@@ -6,10 +6,14 @@
 }
 :root{
     --first : #00a99d;
-    
-    --second : #0C9CEE;
-    --third: #591FCE;
+    --fifth : #1A8B9D;
+    --second : #6A0000;
+    --third: white;
     --fourth : white;
+}
+
+body{
+    background: var(--third);
 }
 a{
     text-decoration: none;
@@ -23,7 +27,7 @@ header{
     left: 0;
     width: 100%;
     background: var(--first);
-    box-shadow: 1px 1px 10px 1px var(--second);
+    box-shadow: 1px 1px 10px 1px var(--fifth);
 }
 .nav{
     display: flex;
@@ -37,17 +41,34 @@ header{
     gap: 2rem;
 }
 .logo a{
-    color: white;
+    color: var(--fourth);
     font-size: 2.5rem;
     font-weight: bolder;
 }
 .nav-bar a{
-    color: white;
+    color: var(--fourth);
     font-size: 1.3rem;
     padding-bottom: .2rem;
 }
 .nav-bar a:hover{
     border-bottom: 2px solid var(--third);
+}
+.scroll{
+    background: url(../images/248097228_227616662691387_1972052704564402905_n.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.scroll i{
+    color: white;
+    font-size: 4rem;
+    background: grey;
+    cursor: pointer;
 }
 .home-up{
     display: flex;
@@ -58,7 +79,7 @@ header{
     margin-bottom: 2rem;
 }
 .home-up h2{
-    color: var(--second);
+    color: var(--fifth);
     font-size: 2rem;
 }
 .home-up img{
@@ -72,7 +93,7 @@ header{
     margin-bottom: 2rem;
 }
 .service{
-    border: 2px solid var(--second);
+    border: 2px solid var(--fifth);
     border-radius: 100%;
     height: 15rem;
     width: 15rem;
@@ -85,7 +106,7 @@ header{
     width: 100px;
 }
 .service h2{
-    color: var(--first);
+    color: var(--fifth);
     font-weight: bolder;
     font-size: 1.5rem;
 }
@@ -111,7 +132,7 @@ header{
 footer{
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid var(--second);
+    border-top: 1px solid var(--fifth);
     
 }
 
@@ -121,7 +142,7 @@ footer img{
 }
 footer h1{
     font-size: 2rem;
-    color: var(--first);
+    color: var(--fifth);
 }
 footer a, footer li{
     font-weight: 100;
@@ -155,7 +176,7 @@ html{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: white;
+    background: var(--fourth);
     transition: .5s ease-in-out;
     top: -500%;
     
@@ -189,7 +210,7 @@ html{
     margin-right: 1rem;
 }
 .contact-inf h2{
-    color: white;
+    color: var(--fourth);
 }
 .contact-infos h1{
     text-align: center;
@@ -208,7 +229,7 @@ html{
     top: 5%;
     left: -90%;
     font-size: 5rem;
-    color: var(--second);
+    color: var(--fifth);
     cursor: pointer;
 }
 
@@ -216,7 +237,7 @@ html{
     cursor: pointer;
 }
 .sanadat-page{
-    background: white;
+    background: var(--fourth);
     position: fixed;
     top: -500%;
     left: 0;
@@ -243,7 +264,7 @@ html{
 }
 .documents a{
     font-size: 1.5rem;
-    background: var(--third);
+    background: var(--second);
     border-radius: 10px;
     color: white;
     padding-right: 1rem;
@@ -252,9 +273,7 @@ html{
     align-items: center;
     cursor: pointer;
 }
-.documents a{
-    color: white;
-}
+
 .documents{
     position: relative;
     display: none;
@@ -271,20 +290,16 @@ html{
     margin-bottom: 1rem;
 }
 .dirasa h2{
-    background: var(--second);
+    background: var(--fifth);
     padding: 0 1rem;
-    color: white;
+    color: var(--fourth);
     cursor: pointer;
 }
-.dirasa img{
-    width: 40px;
-    background: var(--second);
-    padding: .2rem .5rem;
-}
+
 .dirasa i{
     font-size: 1.5rem;
-    background: var(--second);
-    color: white;
+    background: var(--fifth);
+    color: var(--fourth);
     padding: .5rem;
 }
 .les-pdfs{
@@ -301,17 +316,18 @@ html{
     align-items: center;
 }
 .pdf a{
-    background: var(--second);
+    background: var(--fifth);
     width: 25rem;
     height: 4rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--fourth);
     font-size: 1rem;
     border-radius: 20px;
 }
+
 @media only screen and (max-width: 600px){
     .home-down{
         flex-direction: column;
@@ -384,5 +400,9 @@ html{
     }
     .pdf a{
         width: 15rem;
+    }
+    .scroll{
+        background-position: center;
+        background-size: contain;
     }
 }
