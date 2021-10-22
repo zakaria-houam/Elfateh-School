@@ -77,47 +77,28 @@ $(document).ready(function() {
         $(".home-up h2").css("color",$(this).val());
         $(".service h2").css("color",$(this).val());
         $("footer h1").css("color",$(this).val());
-        console.log("hello")
+        
     })
 })
 
 var backgrounds = [
-    'url(../images/247023086_1089473058527295_1913885115251171417_n.png)',
-    'url(../images/247478604_212454510977143_7332679434152108201_n.png)',
-    'url(../images/248097228_227616662691387_1972052704564402905_n.png)'
+    'url(../images/happy-teacher-with-students-background.jpg)',
+    'url(../images/young-colleagues-studying-together-for-college-exam.jpg)',
+    'url(../images/little-girls-doing-online-school-together-at-home.jpg)'
 ]
+
 var scrol = document.querySelector(".scroll")
 var scrollright = document.querySelector(".bx-right-arrow-alt")
 var scrollleft = document.querySelector(".bx-left-arrow-alt")
 var i=1;
-scrollright.addEventListener('click',function(){
-    scrol.style.background = backgrounds[i];
-     scrol.style.backgroundSize= 'cover';
-     scrol.style.backgroundPosition= 'center';
+scrollright.addEventListener('click',change)
+scrollleft.addEventListener('click',change)
+function change(){
+    scrol.classList.toggle("bg"+i);
+    i++
+    if(i>2) i=0;
      
-    
-     i++;
-     if(i>3) i=0;
-})
-scrollleft.addEventListener('click',function(){
-    scrol.style.background = backgrounds[i];
-     scrol.style.backgroundSize= 'cover';
-     scrol.style.backgroundPosition= 'center';
-     
-    
-     i--;
-     if(i<=0) i=3;
-})
-function changebg(){
-     scrol.style.background = backgrounds[i];
-     scrol.style.backgroundSize= 'cover';
-     scrol.style.backgroundPosition= 'center';
-     
-    
-     i++;
-     if(i>3) i=0;
-     
-    
 }
 
-setInterval(changebg,4000);
+
+setInterval(change,4000);

@@ -54,9 +54,8 @@ header{
     border-bottom: 2px solid var(--third);
 }
 .scroll{
-    background: url(../images/248097228_227616662691387_1972052704564402905_n.png);
-    background-position: center;
-    background-size: cover;
+    
+    
     height: 100vh;
     margin-top: 3rem;
     display: flex;
@@ -64,11 +63,27 @@ header{
     align-items: center;
     padding: 0 1rem;
 }
+
 .scroll i{
     color: white;
     font-size: 4rem;
     background: grey;
     cursor: pointer;
+}
+.bg0{
+    background: url(../images/happy-teacher-with-students-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background: url(../images/little-girls-doing-online-school-together-at-home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg2{
+    background: url(../images/young-colleagues-studying-together-for-college-exam.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .home-up{
     display: flex;
@@ -403,6 +418,6 @@ html{
     }
     .scroll{
         background-position: center;
-        background-size: contain;
+        background-size: cover;
     }
 }
