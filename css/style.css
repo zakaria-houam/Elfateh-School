@@ -299,15 +299,21 @@ html{
     position: relative;
     display: none;
     transition: .5s ease-in-out;
+   
 }
 .show-document{
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .1rem;
 }
 .dirasa, .mod{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: .2rem;
     margin-bottom: 1rem;
 }
 .dirasa h2{
@@ -320,13 +326,20 @@ html{
 }
 
 .dirasa i, .mod i{
-    font-size: 1.5rem;
+    font-size: 2rem;
     background: var(--fifth);
     color: var(--fourth);
     padding: .5rem;
+    text-align: center;
+}
+
+.mod a {
+    width: 20rem;
 }
 .mod i {
     background: var(--second);
+    font-size: 2.5rem;
+    padding: 1rem 1rem;
 }
 .les-pdfs{
     margin-top: 5rem;
@@ -432,13 +445,14 @@ html{
         padding: 0 1rem;
     }
     .dirasa h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .documents a{
         font-size: 1.5rem;
     }
     .dirasa i{
         padding: .2rem;
+        font-size: 1.2rem;
     }
     .pdf a{
         width: 15rem;
@@ -453,5 +467,12 @@ html{
     }
     .copy-right h2{
         font-size: .8rem;
+    }
+    .mod a{
+        width: 10rem;
+    }
+    .mod i{
+        padding: .2rem;
+        font-size: 1.5rem;
     }
 }
