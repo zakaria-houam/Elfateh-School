@@ -356,9 +356,8 @@ html{
 }
 .pdf{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: .2rem;
+    
 }
 .pdf a{
     background: var(--fifth);
@@ -371,6 +370,13 @@ html{
     color: var(--fourth);
     font-size: 1rem;
     
+}
+.pdf i{
+    background: var(--fifth);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    height: 2rem;
 }
 .under-scroll{
     display: flex;
