@@ -120,7 +120,7 @@ header{
 .service img{
     width: 100px;
 }
-.service h2{
+.service h2, .service a{
     color: var(--fifth);
     font-weight: bolder;
     font-size: 1.5rem;
@@ -397,6 +397,17 @@ html{
     border-radius: 10px;
     font-weight: bolder;
 }
+.les-videos iframe{
+    margin-bottom: .7rem;
+}
+.les-videos{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
 @media only screen and (max-width: 600px){
     .home-down{
         flex-direction: column;
@@ -490,5 +501,11 @@ html{
         font-size: 1.5rem;
         height: 2.5rem;
        
+    }
+    .les-videos iframe{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        
     }
 }

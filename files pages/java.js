@@ -3,7 +3,7 @@ $(document).ready(function() {
         $("header").css("background-color",$(this).val());
         $(".pdf a").css("background",$(this).val())
         $("footer").css("background",$(this).val());
-
+        $(".pdf i").css("background",$(this).val())
         console.log("hello")
     })
 })
